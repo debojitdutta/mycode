@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DE-AI prompt generator</title>
+
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+    <!--Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Roboto Font, used as base font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <!--Nanum Brush Script font, used in logo-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!--Material Icons link (light_mode, dark_mode icons)-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!--Font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <script src="javascript/script2.js"></script>
+    <link rel="stylesheet" href="css/prompt.css">
+
+    <!-- Import Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="media/logo-removebg-preview1.png" alt="">
+            <!-- <p class="logo">DE-AI</p> -->
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-items">
+
+                <li><a href="#">Explore</a></li>
+
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+
+        <div class="mode" id="mode">
+            <div class="material-symbols-outlined">dark_mode</div>
+        </div>
+
+        <div class="profile-box">
+            <img class="profile" src="media/profile-image.png" alt="profile" />
+        </div>
+    </header>
+
+
+
+
+
+    <div class="container">
+        <div class="left-container">
+            <div class="left-title">
+                <h3 class="previous-gen">Prompt generator</h3>
+            </div>
+
+            <div class="box1">
+                <div class="links">
+                    <p><img src="media/logoonly-removebg-preview.png">Our Other AI Tools</p>
+
+
+                    <a href="image.html"><img src="media/image.png">Text to Image Generator AI</a>
+                    <a href="video.html"><img src="media/video.png">Text to Video AI</a>
+                    <a href="prompt.html"><img src="media/prompt.png">Prompt Generator AI</a>
+                    <a href="chat.html"><img src="media/chat.png">AI Chat-Bot</a>
+                </div>
+                <div class="shortcut">
+                    <p></p><br>
+                    <div class="new-chat">
+                        <i class="fa fa-plus"></i>
+                        <p class="timer">New Chat</p>
+                    </div>
+                    <!-- <br><br><br><br><br><br> -->
+                    <!-- about our project by tabir sir -->
+                    <div class="about">
+                        <p class="about-text">This is a final year project made by Debojit Dutta(30) & Devansh
+                            Agarwal(23) under the
+                            guidance of Sir Tabiruddin Ahmed.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="generate">
+                <div class="prompt-box1">
+                    <textarea name="receive-prompt" class="receive-prompt" id="receive-prompt"
+                        placeholder="Enter your imagination here!"></textarea>
+                </div>
+
+                <div class="generate-btn">
+                    <button class="action" id="action-btn" type="submit">
+                        <p>Generate</p>
+                        <!-- <i class="fas fa-microphone" id="action-icon"></i> -->
+                    </button>
+                </div>
+
+                <div class="prompt-box2">
+                    <i class="fa-regular fa-copy"></i>
+                    <textarea name="deliver-prompt" class="deliver-prompt" id="deliver-prompt"
+                        placeholder="Your generated prompt will be shown here!"></textarea>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

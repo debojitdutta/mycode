@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.action {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Violet to blue gradient */
+    /* color: white; */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.4s ease; /* Smooth transition effect */
+}
+
+.action:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* Reversed gradient on hover */
+}
+
+
+header .more {
+    width: 90px;
+    height: 90px;
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+    justify-content: space-between;
+    padding: 0 5vw;
+    position: relative;
+}
+
+header .logo-box {
+    width: 10vw;
+}
+
+header .logo-box img {
+    padding: 5px 0 5px 0;
+    width: 100%;
+}
+
+header .profile-box {
+    height: 2.1vw;
+    width: 2.1vw;
+
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+header .profile-box .profile {
+    height: 100%;
+    width: 100%;
+}
+
+header .navbar {
+    position: absolute;
+    right: 20vw;
+}
+
+header .navbar .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+}
+
+header .navbar .nav-items li {
+    margin: 0 1.5vw;
+}
+
+header .navbar .nav-items a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+
+}
+
+header .navbar .nav-items a:hover {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 1.5px;
+    text-shadow: 0 0 10px var(--navbar-color1),
+        0 0 20px var(--navbar-color2);
+}
+
+header .navbar .nav-items a:visited {
+    color: var(--text-color);
+}
+
+header .mode {
+    position: absolute;
+    color: var(--text-color);
+    right: 14vw;
+    cursor: pointer;
+}
+
+header .mode .material-symbols-outlined {
+    font-size: 1.5vw;
+    color: var(--text-color);
+}
+
+
+.container {
+    background-color: var(--background-color);
+    height: 92vh;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+
+.container .left-container {
+    /* height: 92vh; */
+    /* display: none; */
+    background-color: var(--background-color);
+    width: 20%;
+    /* position: absolute; */
+    border-right: 1px solid var(--border-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .left-container .left-title {
+    position: relative;
+    align-items: center;
+    display: flex;
+    background-color: var(--titlebg-color);
+    border-radius: 5px;
+    justify-content: center;
+    top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.container .left-container .box1 .links a {
+    margin-left: 20px;
+    padding: 2px 2px 2px 2px;
+    /* below is the main code for left conatanier */
+    margin-bottom: 30px;
+
+}
+
+
+
+.container .left-container .box1 .links a:hover {
+    border-radius: 10px;
+
+    background-color: rgba(35, 38, 39, 0.5);
+
+}
+
+.container .left-container .box1 .links a img {
+    width: 30px;
+    background-color: none;
+    margin-right: 15px;
+}
+
+.container .left-container .box1 .links {
+    padding-top: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.container .left-container .box1 .links p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--text-color);
+    padding-bottom: 5px;
+    background-color: var(--background-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.container .left-container .box1 .links p img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.container .left-container .box1 .shortcut .new-chat {
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+    background-color: #2c6dfd;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container .left-container .box1 .shortcut .new-chat:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 204, 255, 0.186);
+}
+
+.container .left-container .box1 .shortcut .new-chat .timer {
+    padding: 7px 20px 7px 8px;
+}
+
+.container .left-container .box1 .shortcut .new-chat .fa {
+    color: var(--text-color);
+    padding: 7px 2px 7px 20px;
+}
+
+.container .left-container .box1 .shortcut .about {
+    margin-top: 20vh;
+    width: 100%;
+    box-shadow: 0 0 10px #00000080;
+    background-color: var(--titlebg-color);
+    border-radius: 15px;
+}
+
+.container .left-container .box1 .shortcut .about .about-text {
+    padding: 19px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 0.8vw;
+    font-weight: 400;
+    text-shadow: #151515;
+    color: var(--text-color);
+}
+
+/* BELOW IS LEFT CONTAINERS DESIGNING PART */
+
+/* Base styles for the links in the left container */
+.container .left-container .box1 .links a {
+    /* margin-left: 20px; */
+    /* padding: 2px 2px 2px 2px; */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Add a glow effect based on image color */
+.container .left-container .box1 .links a img {
+    /* width: 20px; */
+    /* margin-right: 10px; */
+    transition: box-shadow 0.2s ease;
+}
+
+/* Hover effect for text-to-image link with blue glow */
+.container .left-container .box1 .links a:nth-child(2):hover img {
+    box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.3);
+    /* Blue glow */
+}
+
+/* Hover effect for text-to-video link with red glow */
+.container .left-container .box1 .links a:nth-child(3):hover img {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+    /* Red glow */
+}
+
+/* Hover effect for prompt generator link with green glow */
+.container .left-container .box1 .links a:nth-child(4):hover img {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.3);
+    /* Green glow */
+}
+
+/* Hover effect for AI Chat-Bot link with yellow glow */
+.container .left-container .box1 .links a:nth-child(5):hover img {
+    box-shadow: 0 0 15px 5px rgba(192, 231, 253, 0.3);
+    /* Yellow glow */
+}
+
+/* Additional hover transform for link */
+.container .left-container .box1 .links a:hover {
+    transform: scale(1.03);
+    /* Slight scale up on hover */
+}
+
+
+
+
+.container main{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main .generate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 70%;
+}
+
+.container main .generate {
+    padding: 20px;
+    /* Size styles */
+    width: 60vw;
+    height: 70vh;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    gap: 50px;
+    flex-direction: column;
+}
+
+
+/* Note :- This is the container for the textarea & the action button */
+.container main .generate .prompt-box1 {
+    /* Size styles */
+    width: 45vw;
+    /* background: #6a11cb; */
+    height: 100px;
+    /* border: 1px solid var(--text-color); */
+}
+
+.container main .generate .prompt-box2 {
+    width: 45vw;
+    position: relative;
+    height: 200px;
+    /* background: #6a11cb; */
+    /* margin-bottom: 20px; */
+    /* border: 1px solid var(--text-color); */
+}
+
+/*  {
+} */
+
+
+.container main .generate .prompt-box2 .fa-copy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    opacity: 0.9;
+    border-radius: 10%;
+    border-bottom-left-radius: 50%;
+    padding: 5px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.container main .generate .prompt-box2 .fa-copy:hover {
+    color: var(--icon-hover-color);
+    background-color: rgb(251, 251, 251);
+}
+
+
+
+/* Note :- This is the actual input box */
+.container main .generate .prompt-box1 .receive-prompt {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    /* Font styles */
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    /* Color styles */
+    background-color: var(--box-background-color);
+    color: var(--text-color);
+    padding: 12px;
+    /* To give some space in between text and edges of the box */
+    resize: none;
+    /* to remove resize styling from textarea */
+}
+
+.container main .generate .prompt-box2 .deliver-prompt {
+    width: 100%;
+    /* border styles */
+    height: 100%;
+    /* border: none; */
+    border-radius: 7px;
+    /* Font styles */
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    /* Color styles */
+    background-color: var(--box-background-color);
+    color: var(--text-color);
+    padding: 12px;
+    
+    /* To give some space in between text and edges of the box */
+    resize: none;
+    /* to remove resize styling from textarea */
+}
+
+/* Styles when prompt is focused */
+.container main .generate .prompt-box1 .prompt:focus {
+    outline: none;
+    /*Remove outline from textarea*/
+}
+
+/* placeholder text inside prompt box styling */
+.container main .generate .prompt-box .prompt::placeholder {
+    /* Color styles */
+    color: var(--placeholder-color);
+}
+
+
+/* Note :- This is the action button */
+
+.container main .generate .generate-btn {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: none; */
+}
+
+
+.container main .generate .generate-btn .action {
+    border: 1px solid #e0e0e0;
+    /* background-color: var(--button-color); */
+    border-radius: 5px 5px 5px 5px;
+    justify-content: space-around;
+    width: 40%;
+    height: 48px;
+    /* color: var(--background-color); */
+    border: none;
+}
+
+
+/* Note :- This is the actual action icon */
+.container main .generate .generate-btn .action p {
+    color: #f5f5f5;
+    font-size: 20px;
+}
+
+/* Styles when the button is hovered */
+.container main .generate .generate-btn .action:hover {
+    /* To remove the default browser's styles when hovered */
+    cursor: pointer;
+    background-color: #252b30;
+    border: 1px solid rgb(0, 0, 0);
+    /* color: var(--text-color); */
+}
+
+/* Styles when the button is clicked */
+.container main .generate .generate-btn .action:active {
+    /* To remove the default browser's styles when active */
+    background-color: var(--box-background-color);
+    border: none;
+}
+
+/* default colours for website */
+:root {
+    --background-color: #141718;
+    --titlebg-color: rgb(35, 38, 39);
+    --text-color: #f5f5f5;
+    --imagebg-color: var(--placeholder-color);
+    --icon-hover-color: #1d1d1d;
+    --box-background-color: #333;
+    --box-shadow-color: #333;
+    --border-color: #494848;
+    --navbar-color1: #ffffff99;
+    --navbar-color2: #ffffff66;
+    --placeholder-color: #bcbcbc;
+}
+
+/* light mode */
+.light-mode {
+    --background-color: #eceff1;
+    --titlebg-color: #9e9e9e;
+    --text-color: #151b1f;
+    --box-background-color: #e0e0e0;
+    --box-shadow-color: #c8c8c8cc;
+    --navbar-color1: #34343499;
+    --navbar-color2: #3d3d3d66;
+    --icon-hover-color: #1d1d1d;
+    --border-color: #151515;
+    --placeholder-color: #211f1f;
+}
+
+
+
+.box1,
+.box2 {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+
+.timer {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2f34;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 10px;
+    border: 3px solid #2c2f34;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+.box1,
+.box2 {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+
+.box2 {
+    margin-top: 10px;
+}
+
+.box1::-webkit-scrollbar,
+.box2::-webkit-scrollbar {
+    width: 12px;
+}
+
+.box1::-webkit-scrollbar-track,
+.box2::-webkit-scrollbar-track {
+    background: #2c2f34;
+    border-radius: 10px;
+}
+
+.box1::-webkit-scrollbar-thumb,
+.box2::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 10px;
+    border: 3px solid #2c2f34;
+}
+
+.box1::-webkit-scrollbar-thumb:hover,
+.box2::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}

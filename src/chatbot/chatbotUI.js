@@ -47,8 +47,8 @@ export function addMessageToUI(message, isUser = false, blur = false) {
     const avatarImg = document.createElement('img');
     avatarImg.classList.add('avatar', isUser ? 'user-image' : 'bot-image');
     avatarImg.src = isUser
-        ? 'default/images/profile-image.png'
-        : 'default/images/logo.png';
+        ? 'assets/images/profile-image.png'
+        : 'assets/images/logo.png';
 
     // add the element to the UI
     messageDiv.appendChild(avatarImg);

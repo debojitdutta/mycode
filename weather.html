@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DE-AI</title>
+
+  <link href="#" rel="shortcut icon" type="image/x-icon" />
+
+  <!--Google fonts link-->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <!--Roboto Font, used as base font-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!--Nanum Brush Script font, used in logo-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!--Material Icons link (light_mode, dark_mode icons)-->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+
+  <!--Font awesome link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Import Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet">
+
+  <link href="css/colors.css" rel="stylesheet">
+  <link href="css/root.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/sidebar.css" rel="stylesheet">
+  <link href="weatherfolder/weather.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logo-box">
+      <img alt="" src="assets/images/logo.png">
+    </div>
+
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="#">Explore</a></li>
+      </ul>
+    </nav>
+
+    <div class="mode" id="mode">
+      <div class="material-symbols-outlined">dark_mode</div>
+    </div>
+
+    <div class="profile-box">
+      <img alt="" src="assets/images/profile-image.png" />
+    </div>
+  </header>
+
+
+  <main>
+    <div class="left-container">
+      <div class="links">
+        <p><img alt="" src="assets/images/logo.png">Our AI Tools</p>
+
+        <a class="not-active" href="main.html"><img alt="" src="assets/images/chat.png">AI Chat-Bot</a>
+        <a class="not-active" href="imagebot.html"><img alt="" src="assets/images/image.png">AI Image-Bot</a>
+        <a class="not-active" href="videobot.html"><img alt="" src="assets/images/video.png">AI Video-Bot</a>
+        <a class="not-active" href="promptbot.html"><img alt="" src="assets/images/prompt.png">AI Prompt-Bot</a>
+        <a class="active" href="weather.html"><img alt="" src="assets/images/weather.png">Weather-Bot</a>
+      </div>
+      <div class="shortcut">
+        <p></p><br>
+        <div class="new-chat">
+          <i class="fa fa-plus"></i>
+          <p class="timer">New Chat</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="weather-app" class="weather-app">
+        <div class="app-header">
+          <img src="assets/images/weather.png" alt="Logo" class="logo">
+          <input type="text" id="city-input" placeholder="Enter city name" />
+        </div>
+        <div class="weather-info">
+          <div class="icon">
+            <img id="weather-icon" src="assets/images/weather.png" alt="Weather Icon" />
+          </div>
+          <h1 id="temperature">21°C</h1>
+          <p id="weather-condition">Fog</p>
+          <p id="location">Guwahati, India</p>
+          <div class="details">
+            <p id="humidity">90% Humidity</p>
+            <p id="wind-speed">20 km/h Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!--<script src="src/chatbot/chatbotUI.js" type="module"></script>-->
+  <script src="src/prompt/promptImagebot.js" type="module"></script>
+  <script src="src/mode/modeSwitch.js" type="module"></script>
+  <!--<script src="src/imagebot/imagebotModel.js" type="module"></script>-->
+  <script src="weather.js"></script>
+
+
+</body>
+
+</html>

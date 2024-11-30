@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DE-AI</title>
+
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+    <!--Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Roboto Font, used as base font-->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet" />
+    <!--Nanum Brush Script font, used in logo-->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet" />
+
+    <!--Material Icons link (light_mode, dark_mode icons)-->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!--Font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Import Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body>
+<header>
+    <div class="logo-box">
+        <img alt="" src="assets/images/logo.png">
+    </div>
+
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="#">Explore</a></li>
+        </ul>
+    </nav>
+
+    <div class="mode" id="mode">
+        <div class="material-symbols-outlined">dark_mode</div>
+    </div>
+
+    <div class="profile-box">
+        <img alt="" src="assets/images/profile-image.png" />
+    </div>
+</header>
+
+
+<main>
+    <div class="left-container">
+        <div class="links">
+            <p><img src="assets/images/logo.png" alt="">Our AI Tools</p>
+
+            <a href="main.html" class="not-active"><img alt="" src="assets/images/chat.png">AI Chat-Bot</a>
+            <a href="imagebot.html" class="not-active"><img alt="" src="assets/images/image.png">AI Image-Bot</a>
+            <a href="videobot.html" class="active"><img alt="" src="assets/images/video.png">AI Video-Bot</a>
+            <a href="promptbot.html" class="not-active"><img alt="" src="assets/images/prompt.png">AI Prompt-Bot</a>
+            <a href="weather.html" class="not-active"><img alt="" src="assets/images/weather.png">Weather-Bot</a>
+        </div>
+        <div class="shortcut">
+            <p></p><br>
+            <div class="new-chat">
+                <i class="fa fa-plus"></i>
+                <p class="timer">New Chat</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------- -->
+    <!-- This is the CHATBOT container -->
+
+    <div class="container">
+        <!--        <div class="chat-messages" id="chatMessages">-->
+        <!--            <div class="message bot-message">-->
+        <!--                <img alt="" src="assets/images/logo.png" class="avatar bot-image" id="chatAvatar">-->
+        <!--                <div class="message-content" id="messageContent">-->
+        <!--                    Hello! How can I assist you today?-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!-- Don't remove this. This helps in understanding how to add content in chat UI -->
+        <!--                    <div class="message user-message">-->
+        <!--                        <img alt="" src="default/images/profile-image.png" class="avatar user-image">-->
+        <!--                        <div class="message-content">-->
+        <!--                            Come on fix this shit this technology is really good!-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--        </div>-->
+
+        <div class="chat-input">
+            <input id="prompt" type="text" autocomplete="off" placeholder="Type a message...">
+
+            <button id="actionBtn">
+                <!-- Switches between microphone and send button -->
+                <i class="fas fa-microphone"></i>
+                <!-- <i class="fas fa-paper-plane"></i> -->
+            </button>
+        </div>
+    </div>
+</main>
+
+<script type="module" src="src/chatbot/chatbotUI.js"></script>
+<script type="module" src="src/prompt/prompt.js"></script>
+<script type="module" src="src/mode/modeSwitch.js"></script>
+
+</body>
+</html>

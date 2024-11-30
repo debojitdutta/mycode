@@ -1,0 +1,143 @@
+.left-container {
+    height: 92vh;
+    display: none;
+    background-color: var(--background-color);
+    flex-basis: 20%;
+    border-right: 1px solid var(--border-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-container .links a {
+    margin-left: 20px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 30px;
+}
+
+.left-container .links .active {
+    background-color: var(--active-tool-sidebar-bg);
+    border-radius: 7px;
+
+}
+
+.left-container .links a:hover {
+    border-radius: 10px;
+    background-color: rgba(35, 38, 39, 0.5);
+}
+
+.left-container .links a img {
+    width: 30px;
+    background-color: none;
+    margin-right: 15px;
+}
+
+.left-container .links {
+    padding-top: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.left-container .links p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--text-color);
+    padding-bottom: 5px;
+    background-color: var(--background-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.left-container .links p img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.left-container .shortcut .new-chat {
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--active-tool-sidebar-bg);
+    margin-left: 25px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.left-container .shortcut .new-chat:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 204, 255, 0.186);
+}
+
+.left-container .shortcut .new-chat .timer {
+    padding: 7px 20px 7px 8px;
+    color: #fff;
+}
+
+.left-container .shortcut .new-chat .fa {
+    color: #fff;
+    padding: 7px 2px 7px 20px;
+}
+
+.left-container .shortcut .about {
+    margin-top: 20vh;
+    width: 100%;
+    box-shadow: 0 0 10px #00000080;
+    background-color: var(--titlebg-color);
+    border-radius: 15px;
+}
+
+.left-container .shortcut .about .about-text {
+    padding: 19px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 0.8vw;
+    font-weight: 400;
+    text-shadow: #151515;
+    color: var(--text-color);
+}
+
+.left-container .links a {
+    /* margin-left: 20px;
+    padding: 2px 2px 2px 2px; */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.left-container .links a img {
+    /* width: 20px;
+    margin-right: 10px; */
+    transition: box-shadow 0.2s ease;
+}
+
+.left-container .links a:nth-child(2):hover img {
+    box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.3);
+}
+
+.left-container .links a:nth-child(3):hover img {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+}
+
+.left-container .links a:nth-child(4):hover img {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.3);
+}
+
+.left-container .links a:nth-child(5):hover img {
+    box-shadow: 0 0 15px 5px rgba(192, 231, 253, 0.3);
+}
+
+.left-container .links a:nth-child(6):hover img {
+    box-shadow: 0 0 15px 5px rgba(255, 119, 0, 0.3);
+}
+
+
+.left-container .links a:hover {
+    transform: scale(1.03);
+}
